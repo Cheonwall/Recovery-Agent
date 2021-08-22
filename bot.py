@@ -1,4 +1,7 @@
 import discord
+import os
+
+
 from app import app
 
 intents = discord.Intents()
@@ -20,5 +23,5 @@ async def on_member_join(member):
         await member.send(embed=embed)
     except:
         pass
-#
-client.run(app.config["ODc4OTQ0MDE2ODQ5MzA5Njk2.YSIiZw.v8yuM3WREtDaiac7wi_yP7IRz14"])
+eccess_token = os.environ["BOT_TOKEN"]
+client.run(app.config["eccess_token"])
